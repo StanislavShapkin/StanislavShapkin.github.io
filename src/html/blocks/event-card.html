@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('blocks/head.html')
+  <body class="body">
+    @@include('blocks/page-header.html')
+      <main class="main">
+          <!-- Здесь будут хлебные крошки -->
+          <div class="events">
+            <section class="listing events__listing">
+              <h2 class="listing__title section-title">Мероприятия</h2>
+              <div class="listing__events-list">
+                            
+                <article class="event-card @@class">        
+                  <!-- Карточка товара -->
+                    <a href="#" class="event-card__link">
+                        <picture class="event-card__picture">
+                            <img src="@@img" alt="@@alt" class="event-card__img" />
+                        </picture>
+                        <h4 class="event-card__title">
+                        @@title
+                        </h4>
+                        <p class="event-card__description">@@descr</p>
+                        <time datetime="@@datetime" class="event-card__time">
+                        @@time
+                        </time>
+                    </a>
+                </article>
+              </div>
+            </section>
+            <!-- Здесь будут дополнительные услуги -->
+          </div>
+      </main>
+  </body>   
+</html>
