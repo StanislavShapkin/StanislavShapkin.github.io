@@ -1,0 +1,35 @@
+.socials {
+    display: flex;
+    align-items: center;
+    &__link {
+        flex-shrink: 0;
+        margin-right: 44px;
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        background-color: @black;
+        color: @white;
+        font-size: 0;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        text-decoration: none;
+        transition: color 0.2s;
+            &:active {
+                color: @red;
+            }
+            &:hover {
+                @media (hover: hover) {
+                color: @red;
+            }
+            &:last-child {
+                margin-right: 0
+            }
+        }
+    }
+    &__icon {
+        width: 50%;
+        height: 50%;
+    }
+}

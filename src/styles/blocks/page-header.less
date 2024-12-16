@@ -7,15 +7,12 @@
     height: 147px;
     display: flex;
     align-items: center;
-    background-color: @gray_dark;
+    background-color: @gray_dark transparent 0.5;
     backdrop-filter: blur(20px);
     z-index: 100;
 
     @supports (backdrop-filter: blur(20px)) {
-        &page-header {
-          background-color: @gray;
-          backdrop-filter: blur(20px);
-        }
+        
     }    
     &__container {
         .container;
@@ -34,7 +31,8 @@
             
         color: @black;
         font-family: @font1;
-        
+        font-weight: 600;
+        font-size: 16 px;
         text-decoration: none;
         transition: color 0.2s;
         &:hover {
